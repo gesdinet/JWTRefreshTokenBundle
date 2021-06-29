@@ -24,6 +24,7 @@ return static function (ContainerConfigurator $containerConfigurator) {
             '%gesdinet_jwt_refresh_token.user_identity_field%',
             '%gesdinet_jwt_refresh_token.token_parameter_name%',
             '%gesdinet_jwt_refresh_token.single_use%',
+            '%gesdinet_jwt_refresh_token.cookie%',
         ])
         ->tag('kernel.event_listener', [
             'event' => 'lexik_jwt_authentication.on_authentication_success',
